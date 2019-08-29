@@ -1,0 +1,8 @@
+Flask
+gunicorn
+firebase_admin
+pandas
+nltk
+xgboost
+textblob
+unidecode
