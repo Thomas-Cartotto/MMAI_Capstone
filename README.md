@@ -1,7 +1,7 @@
 # MMAI_Capstone
 Machine leaning capstone project. Goal: Predict what cannabis and recipe to prescribe a patient to provide relief to their symptoms.
 
-This repo contains three folder that facilitate the operation of Cannjoin's website and mobile apps.
+This repo contains three folder that facilitate the operation of Cannjoin's digital systems.
 
 1) First there is the Recipe Recommendation Machine Learning folder. This contains sample data sets, as well as all of the jupyter
 notebook files used in developmemnt. This is where new models, datastructures, and concepts are created and tested.
