@@ -16378,7 +16378,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -16446,19 +16446,26 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">strain_grouped</span><span class="p">[</span><span class="s1">&#39;sativa&#39;</span><span class="p">]</span><span class="o">=</span><span class="kc">False</span>
+<span class="n">strain_grouped</span><span class="p">[</span><span class="s1">&#39;hybrid&#39;</span><span class="p">]</span><span class="o">=</span><span class="kc">False</span>
+<span class="n">strain_grouped</span><span class="p">[</span><span class="s1">&#39;indica&#39;</span><span class="p">]</span><span class="o">=</span><span class="kc">False</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">strain_grouped</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">strain_grouped</span><span class="p">[</span><span class="s1">&#39;strain_category&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Sativa&#39;</span><span class="p">,</span> <span class="s1">&#39;sativa&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">strain_grouped</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">strain_grouped</span><span class="p">[</span><span class="s1">&#39;strain_category&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Sativa&#39;</span><span class="p">,</span> <span class="s1">&#39;hybrid&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">strain_grouped</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">strain_grouped</span><span class="p">[</span><span class="s1">&#39;strain_category&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Sativa&#39;</span><span class="p">,</span> <span class="s1">&#39;indica&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="n">strain_grouped</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">strain_grouped</span><span class="p">[</span><span class="s1">&#39;strain_category&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Hybrid&#39;</span><span class="p">,</span> <span class="s1">&#39;sativa&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="n">strain_grouped</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">strain_grouped</span><span class="p">[</span><span class="s1">&#39;strain_category&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Hybrid&#39;</span><span class="p">,</span> <span class="s1">&#39;hybrid&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">strain_grouped</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">strain_grouped</span><span class="p">[</span><span class="s1">&#39;strain_category&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Hybrid&#39;</span><span class="p">,</span> <span class="s1">&#39;indica&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="n">strain_grouped</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">strain_grouped</span><span class="p">[</span><span class="s1">&#39;strain_category&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Indica&#39;</span><span class="p">,</span> <span class="s1">&#39;sativa&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">strain_grouped</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">strain_grouped</span><span class="p">[</span><span class="s1">&#39;strain_category&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Indica&#39;</span><span class="p">,</span> <span class="s1">&#39;hybrid&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="n">strain_grouped</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">strain_grouped</span><span class="p">[</span><span class="s1">&#39;strain_category&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Indica&#39;</span><span class="p">,</span> <span class="s1">&#39;indica&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 
@@ -16469,7 +16476,20 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">submitStrainToDB</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
@@ -16498,13 +16518,94 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">strain_grouped</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">submitStrainToDB</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[10]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0       True
+1       True
+2       True
+3       True
+4       True
+5       True
+6       True
+7       True
+8       True
+9       True
+10      True
+11      True
+12      True
+13      True
+14      True
+15      True
+16      True
+17      True
+18      True
+19      True
+20      True
+21      True
+22      True
+23      True
+24      True
+25      True
+26      True
+27      True
+28      True
+29      True
+        ... 
+1288    True
+1289    True
+1290    True
+1291    True
+1292    True
+1293    True
+1294    True
+1295    True
+1296    True
+1297    True
+1298    True
+1299    True
+1300    True
+1301    True
+1302    True
+1303    True
+1304    True
+1305    True
+1306    True
+1307    True
+1308    True
+1309    True
+1310    True
+1311    True
+1312    True
+1313    True
+1314    True
+1315    True
+1316    True
+1317    True
+Length: 1318, dtype: bool</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -16545,7 +16646,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here we need to pull in the data that goes with the reviews</span>
@@ -16559,7 +16660,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">remove_html_tags</span><span class="p">(</span><span class="n">sentence</span><span class="p">):</span>
@@ -16601,7 +16702,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">getCurrentReviewSentiment</span><span class="p">(</span><span class="n">comment</span><span class="p">):</span>
@@ -16623,7 +16724,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">review_df</span><span class="p">[[</span><span class="s1">&#39;commnet_polarity&#39;</span><span class="p">,</span> <span class="s1">&#39;comment_subjectivity&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">review_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">getCurrentReviewSentiment</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;comment&#39;</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -16636,7 +16737,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">addRecipeAndStrainDataToReview</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
@@ -16656,7 +16757,7 @@ div#notebook {
     <span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cramps&#39;</span><span class="p">,</span> <span class="s1">&#39;depression&#39;</span><span class="p">,</span> <span class="s1">&#39;eye_pressure&#39;</span><span class="p">,</span> <span class="s1">&#39;fatigue_headaches&#39;</span><span class="p">,</span> <span class="s1">&#39;inflamation_insomnia&#39;</span><span class="p">,</span> <span class="s1">&#39;lack_appetite&#39;</span><span class="p">,</span> <span class="s1">&#39;muscle_spasms&#39;</span><span class="p">,</span> <span class="s1">&#39;nausea&#39;</span><span class="p">,</span> <span class="s1">&#39;pain&#39;</span><span class="p">,</span> <span class="s1">&#39;seizures&#39;</span><span class="p">,</span> <span class="s1">&#39;spasticity&#39;</span><span class="p">,</span> <span class="s1">&#39;stress&#39;</span><span class="p">]</span>
     
     <span class="c1"># Add to the database</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;hybrid&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;sativa&#39;</span><span class="p">],</span><span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;indica&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;thc_percent&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;cbd_percent&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;avg_sentiment&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;avg_polarity&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;avg_rating&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;cooking_time_min&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;is_desert&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;oven_percentage_power&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;percent_serving_weight_weed_ingredient&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;uses_butter&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;uses_oil&#39;</span><span class="p">],</span> <span class="n">conditions</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">)],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;comment&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;commnet_polarity&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;comment_subjectivity&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;rating&#39;</span><span class="p">],</span> <span class="nb">bool</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">1</span><span class="p">)),</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;username&#39;</span><span class="p">]]</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;hybrid&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;sativa&#39;</span><span class="p">],</span><span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;indica&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;thc_percent&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;cbd_percent&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;avg_sentiment&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;avg_polarity&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;avg_rating&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;cooking_time_min&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;is_desert&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;oven_percentage_power&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;percent_serving_weight_weed_ingredient&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;uses_butter&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;uses_oil&#39;</span><span class="p">],</span> <span class="n">conditions</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">)],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;comment&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;commnet_polarity&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;comment_subjectivity&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;rating&#39;</span><span class="p">],</span> <span class="nb">bool</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">1</span><span class="p">)),</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;username&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;strain_id&#39;</span><span class="p">]]</span>
     
     <span class="n">review_ref</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">collection</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;reviews&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">document</span><span class="p">()</span>    
     <span class="n">review_ref</span><span class="o">.</span><span class="n">set</span><span class="p">({</span>
@@ -16680,10 +16781,11 @@ div#notebook {
         <span class="sa">u</span><span class="s1">&#39;comment_subjectivity&#39;</span><span class="p">:</span> <span class="n">data</span><span class="p">[</span><span class="mi">17</span><span class="p">],</span>
         <span class="sa">u</span><span class="s1">&#39;rating&#39;</span><span class="p">:</span> <span class="n">data</span><span class="p">[</span><span class="mi">18</span><span class="p">],</span>
         <span class="sa">u</span><span class="s1">&#39;relief&#39;</span><span class="p">:</span> <span class="n">data</span><span class="p">[</span><span class="mi">19</span><span class="p">],</span>
-        <span class="sa">u</span><span class="s1">&#39;username&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">20</span><span class="p">])</span>
+        <span class="sa">u</span><span class="s1">&#39;username&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">20</span><span class="p">]),</span>
+        <span class="sa">u</span><span class="s1">&#39;strain_id&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">21</span><span class="p">])</span> 
     <span class="p">})</span>
     
-    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">((</span><span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;hybrid&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;sativa&#39;</span><span class="p">],</span><span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;indica&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;thc_percent&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;cbd_percent&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;avg_sentiment&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;avg_polarity&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;avg_rating&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;cooking_time_min&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;is_desert&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;oven_percentage_power&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;percent_serving_weight_weed_ingredient&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;uses_butter&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;uses_oil&#39;</span><span class="p">],</span> <span class="n">conditions</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">)],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;comment&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;commnet_polarity&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;comment_subjectivity&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;rating&#39;</span><span class="p">],</span> <span class="nb">bool</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">1</span><span class="p">)),</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;username&#39;</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">((</span><span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;hybrid&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;sativa&#39;</span><span class="p">],</span><span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;indica&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;thc_percent&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;cbd_percent&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;avg_sentiment&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;avg_polarity&#39;</span><span class="p">],</span> <span class="n">strainData</span><span class="p">[</span><span class="s1">&#39;avg_rating&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;cooking_time_min&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;is_desert&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;oven_percentage_power&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;percent_serving_weight_weed_ingredient&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;uses_butter&#39;</span><span class="p">],</span> <span class="n">recipeData</span><span class="p">[</span><span class="s1">&#39;uses_oil&#39;</span><span class="p">],</span> <span class="n">conditions</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">)],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;comment&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;commnet_polarity&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;comment_subjectivity&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;rating&#39;</span><span class="p">],</span> <span class="nb">bool</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">1</span><span class="p">)),</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;username&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;strain_id&#39;</span><span class="p">]))</span>
 </pre></div>
 
     </div>
@@ -16693,10 +16795,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">review_df</span><span class="p">[[</span><span class="s1">&#39;hybrid&#39;</span><span class="p">,</span> <span class="s1">&#39;sativa&#39;</span><span class="p">,</span> <span class="s1">&#39;indica&#39;</span><span class="p">,</span> <span class="s1">&#39;thc_percent&#39;</span><span class="p">,</span> <span class="s1">&#39;cbd_percent&#39;</span><span class="p">,</span> <span class="s1">&#39;avg_subjectivity&#39;</span><span class="p">,</span> <span class="s1">&#39;avg_polarity&#39;</span><span class="p">,</span> <span class="s1">&#39;avg_rating&#39;</span><span class="p">,</span> <span class="s1">&#39;cooking_time_min&#39;</span><span class="p">,</span> <span class="s1">&#39;is_desert&#39;</span><span class="p">,</span> <span class="s1">&#39;oven_percentage_power&#39;</span><span class="p">,</span> <span class="s1">&#39;percent_serving_weight_weed_ingredient&#39;</span><span class="p">,</span> <span class="s1">&#39;uses_butter&#39;</span><span class="p">,</span> <span class="s1">&#39;uses_oil&#39;</span><span class="p">,</span> <span class="s1">&#39;condition&#39;</span><span class="p">,</span> <span class="s1">&#39;comment&#39;</span><span class="p">,</span> <span class="s1">&#39;commnet_polarity&#39;</span><span class="p">,</span> <span class="s1">&#39;comment_subjectivity&#39;</span><span class="p">,</span> <span class="s1">&#39;rating&#39;</span><span class="p">,</span> <span class="s1">&#39;relief&#39;</span><span class="p">,</span> <span class="s1">&#39;username&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">review_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">addRecipeAndStrainDataToReview</span><span class="p">(</span><span class="n">row</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">review_df</span><span class="p">[[</span><span class="s1">&#39;hybrid&#39;</span><span class="p">,</span> <span class="s1">&#39;sativa&#39;</span><span class="p">,</span> <span class="s1">&#39;indica&#39;</span><span class="p">,</span> <span class="s1">&#39;thc_percent&#39;</span><span class="p">,</span> <span class="s1">&#39;cbd_percent&#39;</span><span class="p">,</span> <span class="s1">&#39;avg_subjectivity&#39;</span><span class="p">,</span> <span class="s1">&#39;avg_polarity&#39;</span><span class="p">,</span> <span class="s1">&#39;avg_rating&#39;</span><span class="p">,</span> <span class="s1">&#39;cooking_time_min&#39;</span><span class="p">,</span> <span class="s1">&#39;is_desert&#39;</span><span class="p">,</span> <span class="s1">&#39;oven_percentage_power&#39;</span><span class="p">,</span> <span class="s1">&#39;percent_serving_weight_weed_ingredient&#39;</span><span class="p">,</span> <span class="s1">&#39;uses_butter&#39;</span><span class="p">,</span> <span class="s1">&#39;uses_oil&#39;</span><span class="p">,</span> <span class="s1">&#39;condition&#39;</span><span class="p">,</span> <span class="s1">&#39;comment&#39;</span><span class="p">,</span> <span class="s1">&#39;commnet_polarity&#39;</span><span class="p">,</span> <span class="s1">&#39;comment_subjectivity&#39;</span><span class="p">,</span> <span class="s1">&#39;rating&#39;</span><span class="p">,</span> <span class="s1">&#39;relief&#39;</span><span class="p">,</span> <span class="s1">&#39;username&#39;</span><span class="p">,</span> <span class="s1">&#39;strain_id&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">review_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">addRecipeAndStrainDataToReview</span><span class="p">(</span><span class="n">row</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -16706,10 +16808,23 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">review_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;TestData.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">review_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;TestDataNew.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>

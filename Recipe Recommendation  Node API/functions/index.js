@@ -40,27 +40,50 @@ exports.createProfile = functions.https.onRequest((req, res)  => {
 });
 
 // Upload a rating by a user 
-exports.addStrainReview = functions.https.onRequest((req, res)  => {
+exports.addReviewOfStrain = functions.https.onRequest((req, res)  => {
 
 	let userID = req.body.username;
 	let strainID = req.body.strain_id;
+	let recipeID = req.body.recipe_id;
 	let ratingText = req.body.rating_text;
 	let ratingNumber = req.body.rating_number;
-	let lastName = req.body.last_name;
 
-	return admin.auth().createUser({
-	  email: email,
-	  emailVerified: false,
-	  username: username,
-	  photoURL: photoURL,
-	  firstName: firstName,
-	  lastName: lastName,
-	  disabled: false
-	}).then(function(userRecord) {
-		return res.status(200).send(userRecord)
-	}).catch(function(error) {
-	    return res.status(500).send(error)
-	 });
+
+	let strainRef = db.collection('strains').doc(strainID);
+	let recipeRef = db.collection('recipes').doc(recipeID);
+
+	let getDoc = strainRef.get().then(doc => {
+
+	    if (!doc.exists) {
+	      console.log('No such document!');
+	    } else {
+
+	    	let strainData = doc.data();
+
+			let getrecipeRefDoc = recipeRef.get().then(doc => {
+			    if (!doc.exists) {
+			      console.log('No such document!');
+			    } else {
+
+			    	let recipeData = doc.data();
+
+			    	// Here we combine the data from the recipe and strain, the upload it all to the server where a listener will take care of sentiment
+
+			    	return admin.firestore().collection('reviews').doc(user.uid).set(data, {merge:true}).then(response => {
+			          return res.status(200).send(user);
+			        }).catch(error => {
+			          return res.status(500).send(user);
+			        });
+			    }
+			  })
+			  .catch(err => {
+			    console.log('Error getting document', err);
+			  });
+	    }
+	  })
+	  .catch(err => {
+	    console.log('Error getting document', err);
+	  });
 });
 
 
