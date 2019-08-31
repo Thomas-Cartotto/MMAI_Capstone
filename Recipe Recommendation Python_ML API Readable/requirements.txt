@@ -6,3 +6,5 @@ nltk
 xgboost
 textblob
 unidecode
+numpy
+sklearn
